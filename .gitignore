@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Other
-public/css/style.min.css
+src/public/css/style.min.css
