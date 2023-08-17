@@ -6,7 +6,7 @@ insert_final_newline = true
 indent_style = space
 trim_trailing_whitespace = true
 
-[*.css]
+[{*.css, package.*, tailwind.config.js}]
 indent_size = 2
 
 [*.{html, js}]
