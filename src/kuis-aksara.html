@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./public/css/style.min.css" />
+        <script defer src="./public/js/kuis-aksara.js"></script>
+    </head>
+    <body>
+        <header
+            class="w-full h-11 shadow-lg bg-primary-1 fixed top-0 z-50"
+        ></header>
+        <section
+            id="kuis"
+            class="min-h-screen w-screen flex flex-col justify-center items-center gap-4"
+        >
+            <p class="text-center">
+                Tahan dan tarik aksara jawa dibawah ke box latin diatasnya
+            </p>
+            <div class="flex gap-4" id="box"></div>
+            <div class="flex gap-4" id="aksara"></div>
+            <p class="body-bold" id="status-alert"></p>
+        </section>
+        <template id="template-box">
+            <div class="flex flex-col gap-2 justify-center items-center">
+                <div
+                    class="w-16 h-16 sm:w-20 sm:h-20 bg-primary-3 rounded-md shadow-md flex justify-center items-center"
+                    id="box-area"
+                >
+                    <p class="header2" id="content-aksara"></p>
+                </div>
+                <p id="content-text"></p>
+            </div>
+        </template>
+    </body>
+</html>
