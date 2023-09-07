@@ -2,11 +2,60 @@
 <html lang="en">
     <head>
         <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="./public/css/style.min.css" rel="stylesheet">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="./public/css/style.min.css" rel="stylesheet" />
     </head>
+
     <body>
-        <h1 class="text-red-500 text-2xl font-bold">Testing</h1>
+        <header
+            class="w-full h-11 shadow-lg bg-primary-1 fixed top-0 z-50"
+        ></header>
+        <section id="hero" class="relative h-fit">
+            <div class="flex flex-col w-4/6 gap-4 justify-center py-36">
+                <h1>
+                    Belajar Bahasa Jawa Lebih
+                    <span class="text-primary-4 inline">Menyenangkan</span>
+                </h1>
+                <div class="sm:w-4/6">
+                    <p>
+                        Dapatkan pembelajaran yang interaktif dan tentunya mudah
+                        dipahami untuk semua kalangan
+                    </p>
+                </div>
+                <div
+                    class="text-primary-4 text-body flex gap-2 items-center hover:text-primary-3 transition-all duration-200"
+                >
+                    <a href="#">Coba Sekarang</a>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        />
+                    </svg>
+                </div>
+            </div>
+            <div class="absolute right-0 top-0 -z-50">
+                <div class="relative text-2xl">
+                    <img
+                        src="./public/assets/wayang1.png"
+                        alt="wayang"
+                        class="absolute w-[30em] h-[30em]"
+                    />
+                    <!-- <a href='https://pngtree.com/freepng/wayang-kulit-gatot-kaca-werkudara-traditional-indonesian-javanese-art_9045855.html'>png image from pngtree.com/</a> -->
+                    <div
+                        class="rounded-full w-[30em] h-[30em] bg-primary-3"
+                    ></div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
