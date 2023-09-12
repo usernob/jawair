@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./public/css/style.min.css" />
+        <script
+            defer
+            type="module"
+            src="./public/js/kuis-ragambasa.js"
+        ></script>
+    </head>
+    <body>
+        <header
+            class="w-full h-11 shadow-lg bg-primary-1 fixed top-0 z-50"
+        ></header>
+        <section
+            class="min-h-screen w-screen flex flex-col justify-center items-center gap-4"
+        >
+            <p class="text-center">Lengkapi kata dibawah ini</p>
+            <div class="flex flex-col gap-4 w-full" id="box-container">
+                <div
+                    class="flex-1 flex gap-4 justify-center items-center text-center"
+                >
+                    <p class="flex-1">Ngoko</p>
+                    <p class="flex-1">Krama Lugu</p>
+                    <p class="flex-1">Krama Inggil</p>
+                </div>
+                <template id="template-input">
+                    <input
+                        type="text"
+                        class="bg-primary-3 text-body w-full px-4 py-2 rounded-md focus:outline-none text-center"
+                    />
+                </template>
+                <template id="template-flex-input">
+                    <div
+                        class="flex-1 flex gap-4 justify-center items-center text-center"
+                    ></div>
+                </template>
+            </div>
+        </section>
+    </body>
+</html>
