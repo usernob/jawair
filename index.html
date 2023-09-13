@@ -5,12 +5,66 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="./public/css/style.min.css" rel="stylesheet" />
+        <script defer src="./public/js/main.js"></script>
     </head>
 
     <body>
-        <header
-            class="w-full h-11 shadow-lg bg-primary-1 fixed top-0 z-50"
-        ></header>
+        <header class="w-full absolute top-0 left-0 flex items-center z-[9999]">
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <div class="px-4">
+                        <a href="#" class="block py-4 text-logo">Logo</a>
+                    </div>
+                    <div class="flex items-center px-4">
+                        <button
+                            id="hamburger"
+                            name="hamburger"
+                            type="button"
+                            class="block absolute right-4 lg:hidden"
+                        >
+                            <span
+                                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+                            ></span>
+                            <span
+                                class="hamburger-line transition duration-300 ease-in-out"
+                            ></span>
+                            <span
+                                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+                            ></span>
+                        </button>
+
+                        <nav
+                            id="nav-menu"
+                            class="hidden absolute py-5 bg-primary-1 shadow-md rounded-md max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+                        >
+                            <ul class="block lg:flex">
+                                <li class="group">
+                                    <a
+                                        href="./index.html"
+                                        class="text-body py-2 mx-8 flex group-hover:text-primary-3 navbar-active"
+                                        >Beranda</a
+                                    >
+                                </li>
+                                <li class="group">
+                                    <a
+                                        href="./kuis-aksara.html"
+                                        class="text-body py-2 mx-8 flex group-hover:text-primary-3"
+                                        >Aksara</a
+                                    >
+                                </li>
+                                <li class="group">
+                                    <a
+                                        href="./kuis-ragambasa.html"
+                                        class="text-body py-2 mx-8 flex group-hover:text-primary-3"
+                                        >Ragambasa</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
         <section id="hero" class="relative h-fit">
             <div class="flex flex-col w-4/6 gap-4 justify-center py-36">
                 <h1>
