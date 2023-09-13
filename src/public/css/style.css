@@ -9,6 +9,10 @@
     @apply scroll-smooth font-sans text-black bg-primary-1;
   }
 
+  body {
+    @apply overflow-auto;
+  }
+
   h1 {
     @apply text-3xl sm:text-4xl lg:text-5xl font-extrabold;
   }
@@ -46,4 +50,40 @@
   .text-mini {
     @apply text-xs font-medium;
   }
+
+  .text-logo {
+    @apply text-3xl font-bold;
+  }
+}
+
+.navbar-active {
+  @apply text-primary-3 flex-col after:w-full after:h-[2px] after:bg-primary-3;
+}
+
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 bg-black block;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-4 rounded-md;
 }
