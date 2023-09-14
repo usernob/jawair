@@ -14,15 +14,15 @@
         >
             <div class="container">
                 <div class="flex items-center justify-between relative">
-                    <div>
+                    <div class="px-4">
                         <a href="#" class="block py-4 text-logo">Logo</a>
                     </div>
-                    <div class="flex items-center">
+                    <div class="flex items-center px-4">
                         <button
                             id="hamburger"
                             name="hamburger"
                             type="button"
-                            class="block absolute right-2 lg:hidden"
+                            class="block absolute right-4 lg:hidden"
                         >
                             <span
                                 class="hamburger-line transition duration-300 ease-in-out origin-top-left"
@@ -37,7 +37,7 @@
 
                         <nav
                             id="nav-menu"
-                            class="hidden absolute py-5 bg-primary-1 shadow-md rounded-md max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none transition-all duration-300 ease-in-out"
+                            class="hidden absolute py-5 bg-primary-1 shadow-md rounded-md max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
                         >
                             <ul class="block lg:flex">
                                 <li class="group">
@@ -60,6 +60,62 @@
                                         class="text-body py-2 mx-8 flex group-hover:text-primary-3"
                                         >Ragambasa</a
                                     >
+                                </li>
+                                <li class="group">
+                                    <div
+                                        class="relative inline-block text-left"
+                                    >
+                                        <div>
+                                            <button
+                                                type="button"
+                                                class="inline-flex justify-center items-center gap-x-1.5 py-2 mx-8 text-body group-hover:text-primary-3"
+                                                id="dropdown-button"
+                                                aria-expanded="true"
+                                                aria-haspopup="true"
+                                            >
+                                                Kuis
+                                                <svg
+                                                    class="-mr-1 h-5 w-5 text-body group-hover:text-primary-3"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                    aria-hidden="true"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                        clip-rule="evenodd"
+                                                    />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="absolute hidden right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-primary-1 shadow-lg transition-all duration-300 ease-in-out"
+                                            id="dropdown-menu"
+                                            role="menu"
+                                            aria-orientation="vertical"
+                                            aria-labelledby="menu-button"
+                                            tabindex="-1"
+                                        >
+                                            <div class="p-2" role="none">
+                                                <a
+                                                    href="./kuis-aksara.html"
+                                                    class="block px-4 py-2 text-body hover:text-primary-3"
+                                                    role="menuitem"
+                                                    tabindex="-1"
+                                                    id="menu-item-0"
+                                                    >Kuis Aksara Jawa</a
+                                                >
+                                                <a
+                                                    href="./kuis-ragambasa.html"
+                                                    class="block px-4 py-2 text-body hover:text-primary-3"
+                                                    role="menuitem"
+                                                    tabindex="-1"
+                                                    id="menu-item-1"
+                                                    >Kuis Ragam Basa</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </nav>
