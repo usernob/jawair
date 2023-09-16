@@ -76,6 +76,10 @@
   @apply -rotate-45;
 }
 
+.aos {
+  @apply transition-all duration-500 ease-out;
+}
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
