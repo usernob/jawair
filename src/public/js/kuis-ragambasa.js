@@ -45,6 +45,7 @@ function verifySelected(value) {
     if (parseInt(value) == jenisRagamBasaIndex) {
         buttonNext.classList.remove('hidden');
         buttonNext.classList.add('flex');
+        animatePopUp(buttonNext, 'transform', 'scale(0.6)', 'scale(1)');
         statusAlert.classList.add('hidden');
         statusAlert.classList.remove('block');
     } else {
@@ -52,5 +53,6 @@ function verifySelected(value) {
         buttonNext.classList.remove('flex');
         statusAlert.classList.remove('hidden');
         statusAlert.classList.add('block');
+        animatePopUp(statusAlert, 'transform', 'scale(0.6)', 'scale(1)');
     }
 }
