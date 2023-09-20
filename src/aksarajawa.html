@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Kuis Ragam Basa | Jawair</title>
+        <title>Belajar Aksara Jawa | Jawair</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./public/css/style.min.css" />
         <script defer src="./public/js/main.js"></script>
-        <script defer src="./public/js/kuis-ragambasa.js"></script>
+        <script defer src="./public/js/belajar-aksara-jawa.js"></script>
     </head>
     <body>
         <header
@@ -54,7 +54,7 @@
                                 <li class="group">
                                     <a
                                         href="./aksarajawa.html"
-                                        class="text-body py-2 mx-8 flex group-hover:text-primary-3"
+                                        class="text-body py-2 mx-8 flex group-hover:text-primary-3 navbar-active"
                                         >Aksara Jawa</a
                                     >
                                 </li>
@@ -69,7 +69,7 @@
                                     <div
                                         class="relative inline-block text-left"
                                     >
-                                        <div class="navbar-active">
+                                        <div>
                                             <button
                                                 type="button"
                                                 class="inline-flex justify-center items-center gap-x-1.5 py-2 mx-8 text-body group-hover:text-primary-3"
@@ -111,7 +111,7 @@
                                                 >
                                                 <a
                                                     href="./kuis-ragambasa.html"
-                                                    class="block px-4 py-2 text-body hover:text-primary-3 navbar-active"
+                                                    class="block px-4 py-2 text-body hover:text-primary-3"
                                                     role="menuitem"
                                                     tabindex="-1"
                                                     id="menu-item-1"
@@ -127,74 +127,157 @@
                 </div>
             </div>
         </header>
-        <section
-            class="min-h-screen w-full flex flex-col justify-center items-center gap-4"
-        >
-            <h2 id="soal" class="text-center"></h2>
-            <div class="flex flex-col gap-4 w-full lg:w-4/6" id="box-container">
-                <div
-                    class="flex-1 grid grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center text-center"
-                >
-                    <button
-                        id="button-pilihan"
-                        class="flex-1 px-4 py-2 rounded-md bg-primary-3 text-body"
-                        data-value="0"
-                    >
-                        Ngoko Lugu
-                    </button>
-                    <button
-                        id="button-pilihan"
-                        class="flex-1 px-4 py-2 rounded-md bg-primary-3 text-body"
-                        data-value="1"
-                    >
-                        Ngoko Alus
-                    </button>
-                    <button
-                        id="button-pilihan"
-                        class="flex-1 px-4 py-2 rounded-md bg-primary-3 text-body"
-                        data-value="2"
-                    >
-                        Krama Lugu
-                    </button>
-                    <button
-                        id="button-pilihan"
-                        class="flex-1 px-4 py-2 rounded-md bg-primary-3 text-body"
-                        data-value="3"
-                    >
-                        Krama Inggil
-                    </button>
-                </div>
-                <p class="text-center mt-10">
-                    Tentukan jenis ragambasa dari kalimat diatas ini
+        <section class="mt-20">
+            <div class="my-10">
+                <h1>
+                    Mengenal <span class="text-primary-4">Aksara Jawa</span>
+                </h1>
+                <h2 class="text-primary-3">Apa itu aksara jawa</h2>
+                <p>
+                    Aksara Jawa, Aksara Carakan, atau juga disebut Hanacaraka
+                    dan Dentawyanjana, adalah salah satu aksara tradisional
+                    Indonesia yang berkembang di pulau Jawa. Aksara ini terutama
+                    digunakan untuk menulis bahasa Jawa, tetapi dalam
+                    perkembangannya juga digunakan untuk menulis beberapa bahasa
+                    daerah lainnya seperti bahasa Sunda, Madura, Sasak, dan
+                    Melayu, serta bahasa historis seperti Sanskerta dan Kawi.
                 </p>
-                <p
-                    id="status-alert"
-                    class="text-center hidden transition-all duration-300"
-                >
-                    Opps! Pilihanmu Salah
-                </p>
-                <a
-                    href="./kuis-ragambasa.html"
-                    class="justify-center items-center text-body py-2 px-4 rounded-md bg-primary-3 w-fit self-center hidden transition-all duration-300"
-                    id="button-next"
-                >
-                    Lanjut
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                        />
-                    </svg>
-                </a>
             </div>
+            <h1>Ragam <span class="text-primary-4 mb-2">Aksara jawa</span></h1>
+            <div class="bg-primary-4 p-4 rounded-md shadow-lg text-white my-4">
+                <h2>Wyanjana</h2>
+                <p>Aksara ini adalah aksara konsonan dengan vokal /a/.</p>
+                <div
+                    class="w-full grid grid-cols-5 auto-cols-max rounded-md"
+                    id="wyanjana"
+                ></div>
+            </div>
+
+            <div
+                class="bg-primary-3 p-4 rounded-md shadow-lg text-white my-4 pb-10"
+            >
+                <h2>Aksara Swara</h2>
+                <p>
+                    Aksara ini biasa digunakan untuk awalan yang tidak mewakili
+                    konsonan apapun.
+                </p>
+                <div
+                    class="flex gap-4 md:gap-8 justify-center items-center w-full"
+                    id="swara"
+                ></div>
+            </div>
+
+            <div
+                class="bg-primary-3 p-4 rounded-md shadow-lg text-white my-4 pb-10"
+            >
+                <h2>Aksara angka</h2>
+                <p>Aksara ini digunakan untuk menulis angka.</p>
+                <div
+                    class="flex flex-wrap gap-4 md:gap-8 justify-center items-center w-full"
+                    id="angka"
+                ></div>
+            </div>
+
+            <h1 class="mt-10">Sandhangan</h1>
+            <h2>Apa itu <span class="text-primary-4">Sandhangan?</span></h2>
+            <p>
+                Sandhangan biasanya digunakan untuk mengubah vokal asal dari
+                aksara jawa. Sandhangan dibagi menjadi beberapa jenis
+                diantaranya:
+            </p>
+            <template>
+                <div class="my-6">
+                    <h2
+                        class="flex flex-wrap items-center gap-2 my-2 text-primary-4"
+                    >
+                        <svg
+                            class="w-6 h-6 mt-1 text-primary-4"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 14 20"
+                        >
+                            <path
+                                d="M13 20a1 1 0 0 1-.64-.231L7 15.3l-5.36 4.469A1 1 0 0 1 0 19V2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v17a1 1 0 0 1-1 1Z"
+                            />
+                        </svg>
+                        Sandhangan
+                        <span id="jenis" class="text-black"></span>
+                    </h2>
+                    <table
+                        class="table-auto w-full border-collapse border border-primary-4"
+                    >
+                        <thead class="bg-primary-2">
+                            <tr>
+                                <th class="px-4 py-2">Vokal</th>
+                                <th class="px-4 py-2">Bentuk</th>
+                                <th class="px-4 py-2">Nama</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sandhangan-swara"></tbody>
+                    </table>
+                </div>
+            </template>
+            <div id="sandhangan"></div>
         </section>
+        <footer class="bg-primary-4 py-14">
+            <section class="flex flex-wrap justify-between gap-4 items-start">
+                <div class="flex items-center justify-center gap-4 h-fit">
+                    <img
+                        src="./public/assets/logo_jawa_nobg.png"
+                        alt="logo"
+                        width="40"
+                    />
+                    <h2 class="text-logo text-white">Jawair</h2>
+                </div>
+                <div class="w-fit flex gap-14 md:gap-20 text-white">
+                    <div class="w-full">
+                        <div class="flex flex-col gap-1">
+                            <h2 class="mb-4">Links</h2>
+                            <a
+                                href="./index.html"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Beranda</a
+                            >
+                            <a
+                                href="./aksarajawa.html"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Aksara Jawa</a
+                            >
+                            <a
+                                href="./ragambasa.html"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Ragambasa</a
+                            >
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="flex flex-col gap-1">
+                            <h2 class="mb-4">Resource</h2>
+                            <a
+                                href="#"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Patners</a
+                            >
+                            <a
+                                href="#"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Kebijakan Privasi</a
+                            >
+                            <a
+                                href="#"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Ketentuan Kerjasama</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <p class="text-mini text-slate-200">
+                    copyright &copy; jawair 2023
+                </p>
+            </section>
+        </footer>
     </body>
 </html>

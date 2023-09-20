@@ -1,9 +1,0 @@
-#head-list-basa{
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  transition: top .3s ease;
-}
-#head-list-basa.show{
-  top: -70;
-}
