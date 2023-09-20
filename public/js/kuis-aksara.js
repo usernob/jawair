@@ -14,6 +14,7 @@ let data = [
         latin: ['Ma', 'Kan', 'Ba', 'Tu'],
         aksara: ['ꦩ', 'ꦏ', 'ꦤ꧀ꦧ', 'ꦠꦸ'],
     },
+    //TODO: add more data
 ];
 
 //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
@@ -75,6 +76,7 @@ function drag(ev) {
     ev.dataTransfer.setData('index', ev.target.dataset.index);
 }
 
+let counter = 0;
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData('index');
@@ -83,12 +85,24 @@ function drop(ev) {
         `p#content-aksara[data-index="${data}"]`
     );
     let indexOfData = pilihan.aksara.indexOf(newNode.textContent);
-    let status_alert = document.querySelector('p#status-alert');
+    const statusAlert = document.querySelector('#status-alert');
+    const buttonNext = document.querySelector('#button-next');
     if (ev.target.dataset.index == indexOfData) {
+        counter++;
+        if (counter == pilihan.latin.length) {
+            buttonNext.classList.remove('hidden');
+            buttonNext.classList.add('flex');
+            animatePopUp(buttonNext, 'transform', 'scale(0.6)', 'scale(1)');
+        }
         ev.target.removeChild(oldNode);
         ev.target.appendChild(newNode);
-        status_alert.textContent = '';
+        statusAlert.classList.add('hidden');
+        statusAlert.classList.remove('block');
     } else {
-        status_alert.textContent = 'Oops! pilihanmu salah';
+        buttonNext.classList.add('hidden');
+        buttonNext.classList.remove('flex');
+        statusAlert.classList.remove('hidden');
+        statusAlert.classList.add('block');
+        animatePopUp(statusAlert, 'transform', 'scale(0.6)', 'scale(1)');
     }
 }

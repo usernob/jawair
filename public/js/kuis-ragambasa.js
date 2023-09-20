@@ -16,6 +16,7 @@ let data = [
         'Simbah badhe tindak dhateng Surabaya nitih kreta',
         'Kula mboten mangertos ingkang dipunngendikaken Pak Romi',
     ],
+    //TODO: add more data
 ];
 
 function getRandomVal(max) {
