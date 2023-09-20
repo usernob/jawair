@@ -6,6 +6,7 @@
         <title>Tentang Kami | Jawair</title>
         <link rel="stylesheet" href="./public/css/style.min.css" />
         <script defer src="./public/js/main.js"></script>
+        <script defer src="./public/js/aos.js"></script>
     </head>
     <body>
         <header
@@ -126,10 +127,14 @@
                 </div>
             </div>
         </header>
-        <section class="my-20">
+        <section class="my-20 overflow-x-hidden">
             <h1>Tentang <span class="text-primary-3">Kami</span></h1>
-            <div class="flex flex-col lg:flex-row w-full my-8 gap-36">
-                <div class="w-full">
+            <div class="flex flex-col lg:flex-row w-full my-8 gap-10 lg:gap-36">
+                <div
+                    class="w-full aos delay-500"
+                    data-translatein="-50% 0"
+                    data-translateout="50% 0"
+                >
                     <h2 class="text-primary-4">Shitsuke Team</h2>
                     <p>Perkenalkan anggota kami</p>
                     <div class="my-6 flex flex-col gap-4 items-start">
@@ -361,7 +366,11 @@
                     </div>
                 </div>
 
-                <div>
+                <div
+                    class="aos delay-500"
+                    data-translatein="50% 0"
+                    data-translateout="-50% 0"
+                >
                     <h2 class="text-primary-4 mb-6">Sekolah Kami</h2>
                     <h3>SMK Negeri 2 Trenggalek</h3>
                     <p class="text-body">

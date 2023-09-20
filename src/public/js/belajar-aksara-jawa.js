@@ -100,7 +100,7 @@ aksara.angka.forEach((val, index) => {
 for (const [key, val] of Object.entries(sandhangan)) {
     let template = document.querySelector('template');
     let clone = template.content.cloneNode(true);
-    console.log((clone.querySelector('#jenis').innerText = key));
+    clone.querySelector('#jenis').innerText = key;
     val.forEach((swara) => {
         let tr = document.createElement('tr');
         swara.forEach((val, index) => {
