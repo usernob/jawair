@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+Javanese:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,6 +20,10 @@
     @apply text-2xl md:text-3xl font-bold;
   }
 
+  h3 {
+    @apply text-xl md:text-2xl font-bold;
+  }
+
   p {
     @apply text-base sm:text-lg lg:text-xl font-medium;
   }
@@ -39,8 +42,12 @@
     @apply text-2xl md:text-3xl font-bold;
   }
 
+  .header3 {
+    @apply text-xl md:text-2xl font-bold;
+  }
+
   .text-aksara-header {
-    @apply text-4xl md:text-6xl font-bold;
+    @apply font-aksarajawa text-4xl md:text-6xl font-bold;
   }
 
   .text-body {

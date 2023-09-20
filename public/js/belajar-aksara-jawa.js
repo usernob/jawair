@@ -106,6 +106,7 @@ for (const [key, val] of Object.entries(sandhangan)) {
         swara.forEach((val, index) => {
             let td = document.createElement('td');
             td.classList.add(
+                'font-aksarajawa',
                 index == 1 ? 'header2' : 'text-body',
                 'border',
                 'border-primary-4',
