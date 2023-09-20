@@ -136,7 +136,33 @@
             </p>
             <div class="flex gap-4" id="box"></div>
             <div class="flex gap-4" id="aksara"></div>
-            <p class="body-bold" id="status-alert"></p>
+            <p
+                id="status-alert"
+                class="text-center hidden transition-all duration-300"
+            >
+                Opps! Pilihanmu Salah
+            </p>
+            <a
+                href="./kuis-aksara.html"
+                class="justify-center items-center text-body py-2 px-4 rounded-md bg-primary-3 w-fit self-center hidden transition-all duration-300"
+                id="button-next"
+            >
+                Lanjut
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    />
+                </svg>
+            </a>
         </section>
         <template id="template-box">
             <div class="flex flex-col gap-2 justify-center items-center">
