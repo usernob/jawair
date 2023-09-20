@@ -19,6 +19,7 @@ module.exports = {
             },
             fontFamily: {
                 sans: ['Montserrat', 'sans-serif', 'system-ui'],
+                aksarajawa: ['Noto Sans Javanese', 'Montserrat', 'sans-serif'],
             },
         },
     },

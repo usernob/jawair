@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tentang Kami | Jawair</title>
+        <link rel="stylesheet" href="./public/css/style.min.css" />
+        <script defer src="./public/js/main.js"></script>
+    </head>
+    <body>
+        <header
+            class="w-full fixed top-0 bg-primary-1 flex items-center z-[9999] shadow-md"
+        >
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <a href="#" class="block py-2 text-logo">
+                        <img
+                            src="./public/assets/logo_jawa_nobg.png"
+                            alt="logo"
+                            width="40"
+                        />
+                    </a>
+                    <div class="flex items-center px-2">
+                        <button
+                            id="hamburger"
+                            name="hamburger"
+                            type="button"
+                            class="block absolute right-4 lg:hidden"
+                        >
+                            <span
+                                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+                            ></span>
+                            <span
+                                class="hamburger-line transition duration-300 ease-in-out"
+                            ></span>
+                            <span
+                                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+                            ></span>
+                        </button>
+
+                        <nav
+                            id="nav-menu"
+                            class="hidden absolute py-2 bg-primary-1 shadow-md rounded-md max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none transition-all duration-300 ease-in-out"
+                        >
+                            <ul class="block lg:flex">
+                                <li class="group">
+                                    <a
+                                        href="./index.html"
+                                        class="text-body py-2 mx-8 flex group-hover:text-primary-3"
+                                        >Beranda</a
+                                    >
+                                </li>
+                                <li class="group">
+                                    <a
+                                        href="./aksarajawa.html"
+                                        class="text-body py-2 mx-8 flex group-hover:text-primary-3"
+                                        >Aksara Jawa</a
+                                    >
+                                </li>
+                                <li class="group">
+                                    <a
+                                        href="./ragambasa.html"
+                                        class="text-body py-2 mx-8 flex group-hover:text-primary-3"
+                                        >Ragambasa</a
+                                    >
+                                </li>
+                                <li class="group">
+                                    <div
+                                        class="relative inline-block text-left"
+                                    >
+                                        <div>
+                                            <button
+                                                type="button"
+                                                class="inline-flex justify-center items-center gap-x-1.5 py-2 mx-8 text-body group-hover:text-primary-3"
+                                                id="dropdown-button"
+                                                aria-expanded="true"
+                                                aria-haspopup="true"
+                                            >
+                                                Kuis
+                                                <svg
+                                                    class="-mr-1 h-5 w-5 text-body group-hover:text-primary-3"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                    aria-hidden="true"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                        clip-rule="evenodd"
+                                                    />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div
+                                            class="absolute hidden -right-24 md:right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-primary-1 shadow-lg transition-all duration-300 ease-in-out"
+                                            id="dropdown-menu"
+                                            role="menu"
+                                            aria-orientation="vertical"
+                                            aria-labelledby="menu-button"
+                                            tabindex="-1"
+                                        >
+                                            <div class="p-2" role="none">
+                                                <a
+                                                    href="./kuis-aksara.html"
+                                                    class="block px-4 py-2 text-body hover:text-primary-3"
+                                                    role="menuitem"
+                                                    tabindex="-1"
+                                                    id="menu-item-0"
+                                                    >Kuis Aksara Jawa</a
+                                                >
+                                                <a
+                                                    href="./kuis-ragambasa.html"
+                                                    class="block px-4 py-2 text-body hover:text-primary-3"
+                                                    role="menuitem"
+                                                    tabindex="-1"
+                                                    id="menu-item-1"
+                                                    >Kuis Ragam Basa</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="my-20">
+            <h1>Tentang <span class="text-primary-3">Kami</span></h1>
+            <div class="flex flex-col lg:flex-row w-full my-8 gap-36">
+                <div class="w-full">
+                    <h2 class="text-primary-4">Shitsuke Team</h2>
+                    <p>Perkenalkan anggota kami</p>
+                    <div class="my-6 flex flex-col gap-4 items-start">
+                        <div class="flex flex-col gap-2 items-start">
+                            <h3>Ramzi Pandu Ma'arif</h3>
+                            <a
+                                href="https://www.instagram.com/usernob_v2.0.1"
+                                class="flex items-center text-body gap-2 hover:text-primary-3 w-full"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-6 h-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                                    />
+                                </svg>
+                                <div class="text-body flex-1">
+                                    @usernob_v2.0.1
+                                </div>
+                            </a>
+                            <a
+                                href="mailto:ramzipandu670@gmail.com"
+                                class="flex items-center text-body gap-2 hover:text-primary-3 w-full"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-6 h-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                                    />
+                                </svg>
+                                <div class="text-body flex-1">
+                                    ramzipandu670@gmail.com
+                                </div>
+                            </a>
+                            <a
+                                href="#"
+                                class="flex items-center text-body gap-2 w-full"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-6 h-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                                    />
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                                    />
+                                </svg>
+                                <div class="text-body flex-1">
+                                    RT 10, RW 05, Desa Sukorejo, Kecamatan
+                                    Gandusari, Kabupaten Trenggalek, Jawa Timur
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex flex-col gap-2 items-start">
+                            <h3>Rafly Nur Ihvandi</h3>
+                            <a
+                                href="https://www.instagram.com/raflynurihvandi"
+                                class="flex items-center text-body gap-2 hover:text-primary-3 w-full"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-6 h-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                                    />
+                                </svg>
+                                <div class="text-body flex-1">
+                                    @raflynurihvandi
+                                </div>
+                            </a>
+                            <a
+                                href="mailto:rafliamad620@gmail.com"
+                                class="flex items-center text-body gap-2 hover:text-primary-3"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-6 h-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                                    />
+                                </svg>
+                                <div class="text-body flex-1">
+                                    rafliamad620@gmail.com
+                                </div>
+                            </a>
+                            <a
+                                href="#"
+                                class="flex items-center text-body gap-2 w-full"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-6 h-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                                    />
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                                    />
+                                </svg>
+                                <div class="text-body flex-1">
+                                    RT 10, RW 04, Desa Sidomulyo, Kecamatan
+                                    Pule, Kabupaten Trenggalek, Jawa Timur
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex flex-col gap-2 items-start">
+                            <h3>Putri Riyatun Zulkiana</h3>
+                            <a
+                                href="https://www.instagram.com/freideefursten"
+                                class="flex items-center text-body gap-2 hover:text-primary-3 w-full"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-6 h-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                                    />
+                                </svg>
+                                <div class="text-body flex-1">
+                                    @freideefursten
+                                </div>
+                            </a>
+                            <a
+                                href="mailto:riyaputri422@gmail.com"
+                                class="flex items-center text-body gap-2 hover:text-primary-3 w-full"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-6 h-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                                    />
+                                </svg>
+                                <p class="text-body flex-1">
+                                    riyaputri422@gmail.com
+                                </p>
+                            </a>
+                            <a
+                                href="#"
+                                class="flex items-center text-body gap-2 w-full"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-6 h-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                                    />
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                                    />
+                                </svg>
+                                <p class="text-body flex-1">
+                                    RT 25, RW 08, Desa Karangrejo, Kecamatan
+                                    Kampak, Kabupaten Trenggalek, Jawa Timur
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-primary-4 mb-6">Sekolah Kami</h2>
+                    <h3>SMK Negeri 2 Trenggalek</h3>
+                    <p class="text-body">
+                        Jl. Ronggo Warsito Gg. Sidomukti No. 1, Jambangan,
+                        Sumbergedong, Kecamatan Trenggalek, Kabupaten
+                        Trenggalek, Jawa Timur 66315
+                    </p>
+                    <img
+                        src="./public/assets/smk.jpg"
+                        alt="smkn2trenggalek"
+                        class="shadow-lg rounded-md my-4"
+                    />
+                </div>
+            </div>
+        </section>
+        <footer class="bg-primary-4 pt-14 pb-8">
+            <section class="flex flex-wrap justify-between gap-4 items-start">
+                <div class="flex items-center justify-center gap-4 h-fit">
+                    <img
+                        src="./public/assets/logo_jawa_nobg.png"
+                        alt="logo"
+                        width="40"
+                    />
+                    <h2 class="text-logo text-white">Jawair</h2>
+                </div>
+                <div class="w-fit flex gap-14 md:gap-20 text-white">
+                    <div class="w-full">
+                        <div class="flex flex-col gap-1">
+                            <h3 class="mb-4">Links</h3>
+                            <a
+                                href="./index.html"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Beranda</a
+                            >
+                            <a
+                                href="./aksarajawa.html"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Aksara Jawa</a
+                            >
+                            <a
+                                href="./ragambasa.html"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Ragambasa</a
+                            >
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="flex flex-col gap-1">
+                            <h3 class="mb-4">Resource</h3>
+                            <a
+                                href="./about.html"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Tentang kami</a
+                            >
+                            <a
+                                href="#"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Patners</a
+                            >
+                            <a
+                                href="#"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Kebijakan Privasi</a
+                            >
+                            <a
+                                href="#"
+                                class="body-text hover:text-primary-1 transition-all duration-300"
+                                >Ketentuan Kerjasama</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-10">
+                <p class="text-mini opacity-60 text-white">
+                    copyright &copy; Shitsuke Team 2023
+                </p>
+            </section>
+        </footer>
+    </body>
+</html>
